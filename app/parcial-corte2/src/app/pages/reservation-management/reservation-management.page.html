@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gestión de Reservas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <app-date-time-picker (dateTimeSelected)="handleDateTime($event)"></app-date-time-picker>
+  <app-customer-form (customerData)="handleCustomer($event)"></app-customer-form>
+  <app-table-selector (tableSelected)="handleTable($event)"></app-table-selector>
+
+  <ion-button expand="block" (click)="submitReservation()">Confirmar Reserva</ion-button>
+</ion-content>
