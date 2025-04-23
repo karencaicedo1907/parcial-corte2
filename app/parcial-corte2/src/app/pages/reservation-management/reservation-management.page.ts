@@ -36,6 +36,5 @@ export class ReservationManagementPage {
 
   submitReservation() {
     console.log('Reserva enviada:', this.reservation);
-    // Aquí podrías hacer un POST al backend con los datos de la reserva.
   }
 }

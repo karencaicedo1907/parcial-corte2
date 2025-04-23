@@ -1,0 +1,6 @@
+<ion-item>
+  <ion-label>Fecha y Hora</ion-label>
+  <ion-datetime [(ngModel)]="dateTime" display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+</ion-item>
+
+<ion-button expand="full" (click)="emitDateTime()">Seleccionar Fecha y Hora</ion-button>

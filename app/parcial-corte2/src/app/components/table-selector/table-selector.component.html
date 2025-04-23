@@ -1,0 +1,10 @@
+<ion-item>
+  <ion-label>Mesa</ion-label>
+  <ion-select placeholder="Selecciona una mesa" [(ngModel)]="selectedTable" (ionChange)="emitTable()">
+    <ion-select-option *ngFor="let mesa of availableTables" [value]="mesa">
+      Mesa {{ mesa }}
+    </ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-button expand="full" (click)="emitTable()">Seleccionar Mesa</ion-button>
